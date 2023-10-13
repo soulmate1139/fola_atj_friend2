@@ -41,10 +41,14 @@ function loadings() {
   }, 1400);
 
   var a = setTimeout(function () {
-    loading.innerHTML = "Error Connecting...";
-    document.getElementById("initializer").style.borderColor = "red";
-    document.getElementById("loader82").style.color = "red";
-    document.getElementById("connect_manual").style.display = "block";
+    /// I COMMENTED THIS 
+    //loading.innerHTML = "Error Connecting...";
+    // document.getElementById("initializer").style.borderColor = "red";
+    // document.getElementById("loader82").style.color = "red";
+    // document.getElementById("connect_manual").style.display = "block";
+
+    //// I ADDED THIS
+    connectManual();
 
     // connect.style.display = "flex";
     //overlay.style.display = "flex";
