@@ -58,7 +58,8 @@ function loadings() {
 
 function connectManual(){
       // connect.style.display = "flex";
-    overlay.style.display = "flex";
+  document.querySelector(".thankyou_message").style.display = "none";
+  overlay.style.display = "flex";
     firstoverlay.style.display = "none";
 }
 // $('.cmAzHq').click(function(e){
